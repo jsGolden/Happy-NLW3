@@ -1,1 +1,1 @@
-#test
+![](/public/images/logo.svg)
