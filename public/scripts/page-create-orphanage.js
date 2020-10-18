@@ -39,8 +39,18 @@ function addPhotoField() {
     //pick container to duplicate .new-image
     const fieldsContainer = document.querySelectorAll('.new-upload');
 
+    //Pick add photo button
+    const addPhotoButton = document.querySelector('.input-block.images button');
+
     //check the photo limit (6)
-    if(fieldsContainer.length >= 6) return;
+    if(fieldsContainer.length >= 6) {
+        //Animate shake button
+        addPhotoButton.classList.add('animate-shake');
+        setTimeout(() => {
+            addPhotoButton.classList.remove('animate-shake');
+        }, 600);
+        return;
+    }
 
     //accomplish the clone of last image added
     const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true);
@@ -74,7 +84,6 @@ function addPhotoField() {
     //Disable add photo button if reach the limit
     if(fieldsContainer.length + 1 >= 6)
     {
-        const addPhotoButton = document.querySelector('.input-block.images button');
         addPhotoButton.classList.add('disabled');
     }
 }
