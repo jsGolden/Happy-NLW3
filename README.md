@@ -1,1 +1,1 @@
-![](/public/images/logo.svg)
+![](/public/images/logo-black.svg)
