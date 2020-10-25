@@ -41,7 +41,7 @@ Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para ace
 
 ## 📝 Licença
 
-Esse projeto está sob a licença [MIT](LICENSE.md).
+Esse projeto está sob a licença [MIT](LICENSE).
 OpenStreetMap® está sob a licença [OBDL](https://opendatacommons.org/licenses/odbl/)
 
 ---
