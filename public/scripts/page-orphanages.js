@@ -1,6 +1,11 @@
-
 //Create map
 const map = L.map('mapid').setView([-27.2194621, -49.6452641], 15);
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(position => {
+        map.setView([position.coords.latitude, position.coords.longitude], 15);
+    });
+}
 
 //Create and add tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
